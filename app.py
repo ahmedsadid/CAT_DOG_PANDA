@@ -42,8 +42,8 @@ st.write("")
 st.write("Check out the code on my GitHub --> https://github.com/ahmedsadid/CAT_DOG_PANDA")
 
 st.subheader("Upload an image below to try it out!")
-st.caption("Model will run automatically.")
 file_up = st.file_uploader("", type="jpg")
+st.caption("Model will run automatically.")
 
 st.subheader("Result")
 if file_up is not None:
@@ -55,4 +55,4 @@ if file_up is not None:
     outputText = "You have uploaded a " + classes[outIdx] + "!"
     st.markdown(outputText)
 else:
-    st.write("Waiting...")
+    st.caption("Waiting ...")
