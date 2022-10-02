@@ -36,7 +36,10 @@ classes = ['cat','dog','panda']
 st.title("CAT-DOG-PANDA Classifier")
 st.write("")
 st.caption("Using Residual Neural Networks to detect if the image contains a 🙀, 🐶, or 🐼")
-st.write("https://github.com/ahmedsadid/CAT_DOG_PANDA")
+st.write("")
+st.write("")
+
+st.write("Check out the code on my GitHub --> https://github.com/ahmedsadid/CAT_DOG_PANDA")
 
 st.subheader("Upload an image below to try it out!")
 st.caption("Model will run automatically.")
@@ -51,3 +54,5 @@ if file_up is not None:
     outIdx = np.argmax(resnetModel(image_loader(stTransforms, file_up)).detach().numpy())
     outputText = "You have uploaded a " + classes[outIdx] + "!"
     st.markdown(outputText)
+else:
+    st.write("Waiting...")
