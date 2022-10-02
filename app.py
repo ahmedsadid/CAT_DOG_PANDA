@@ -11,8 +11,6 @@ import torchvision.transforms as tt
 from torchvision.datasets import ImageFolder
 from torchvision.utils import make_grid
 from torch.utils.data import DataLoader, Dataset, random_split
-import matplotlib
-import matplotlib.pyplot as plt
 import PIL
 from PIL import Image
 
