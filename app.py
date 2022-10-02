@@ -34,12 +34,8 @@ def image_loader(loader, image_name):
 classes = ['cat','dog','panda']
   
 st.title("CAT-DOG-PANDA Classifier")
-st.write("")
-st.caption("Using Residual Neural Networks to detect if the image contains a 🙀, 🐶, or 🐼")
-st.write("")
-st.write("")
-
-st.write("Check out the code on my GitHub --> https://github.com/ahmedsadid/CAT_DOG_PANDA")
+st.write("Using Residual Neural Networks to detect if the image contains a 🙀, 🐶, or 🐼")
+st.caption("Check out the code on my GitHub --> https://github.com/ahmedsadid/CAT_DOG_PANDA")
 
 st.subheader("Upload an image below to try it out!")
 file_up = st.file_uploader("", type="jpg")
