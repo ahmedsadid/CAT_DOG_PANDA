@@ -1,3 +1,3 @@
 # CAT_DOG_PANDA Classifier
 
-TO_BE_UPDATED
+This project uses a Residual CNN to classify images of animals.
